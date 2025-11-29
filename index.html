@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParadisArtworks | Creative Coloring Books & Planners</title>
+    <meta name="description" content="Discover creativity with ParadisArtworks. Download free coloring pages and explore our premium collection of coloring books for adults, kids, and planners on Amazon.">
+    
+    <!-- English Fonts (Poppins for headings, Inter for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, .nav-item {
+            font-family: 'Poppins', sans-serif;
+        }
+        .pattern-bg {
+            background-color: #fdf2f8;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fbcfe8' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .book-shadow {
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .book-shadow:hover {
+            transform: translateY(-5px) rotate(1deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-pink-600 flex items-center gap-2">
+                <i class="fa-solid fa-paintbrush"></i>
+                ParadisArtworks
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-item hover:text-pink-600 transition font-medium">Home</a>
+                <a href="#freebies" class="nav-item hover:text-pink-600 transition font-medium">Freebies</a>
+                <a href="#categories" class="nav-item hover:text-pink-600 transition font-medium">Categories</a>
+                <a href="#about" class="nav-item hover:text-pink-600 transition font-medium">About Us</a>
+            </div>
+            <a href="https://www.amazon.com/author/paradisartworks" target="_blank" class="bg-pink-600 text-white px-5 py-2 rounded-full hover:bg-pink-700 transition font-bold text-sm shadow-md hover:shadow-lg">
+                Amazon Shop <i class="fa-brands fa-amazon ml-1"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="pattern-bg py-20 lg:py-32 relative overflow-hidden">
+        <div class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 text-center lg:text-left z-10">
+                <span class="inline-block bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm font-bold mb-4 uppercase tracking-wide">Art & Relaxation for Everyone</span>
+                <h1 class="text-4xl lg:text-6xl font-black mb-6 leading-tight">
+                    Unleash Your Creativity with <br>
+                    <span class="gradient-text">ParadisArtworks</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    A premium collection of coloring books for adults & kids, notebooks, and planners. Designed to bring you peace, organization, and joy.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#freebies" class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition font-bold shadow-lg flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-download"></i> Get Free Pages
+                    </a>
+                    <a href="https://www.amazon.com/author/paradisartworks" target="_blank" class="bg-white text-gray-800 border-2 border-gray-200 px-8 py-3 rounded-lg hover:border-pink-500 hover:text-pink-600 transition font-bold flex items-center justify-center gap-2">
+                        Browse on Amazon
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 relative z-10">
+                <!-- Book Illustrations -->
+                <div class="relative w-full max-w-md mx-auto">
+                    <div class="absolute inset-0 bg-pink-300 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
+                    <img src="https://placehold.co/400x500/pink/white?text=KDP+Book+Cover" alt="Featured Coloring Book" class="relative z-10 w-3/4 mx-auto rounded-lg shadow-2xl transform rotate-3 border-4 border-white hover:rotate-0 transition duration-500">
+                    <img src="https://placehold.co/400x500/purple/white?text=Planner" alt="Planner Book" class="absolute top-10 left-0 z-0 w-3/4 rounded-lg shadow-xl transform -rotate-6 opacity-80 border-4 border-white">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Freebies Section (Lead Magnet) -->
+    <section id="freebies" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Free Coloring Pages to Download</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Try our quality before you buy. Download these sample pages, print them out, and start coloring. Love them? Grab the full book on Amazon.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Freebie Card 1 -->
+                <div class="border rounded-2xl p-4 hover:shadow-xl transition group bg-white">
+                    <div class="overflow-hidden rounded-xl mb-4 bg-gray-100 h-64 flex items-center justify-center relative">
+                        <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded shadow">Free PDF</span>
+                        <img src="https://placehold.co/300x400/FFF/000?text=Mandala+Page" alt="Mandala Page" class="h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Relaxing Mandala Page</h3>
+                    <p class="text-sm text-gray-500 mb-4">A sample page from "The Magical World of Mandalas".</p>
+                    <div class="flex gap-2">
+                        <button onclick="downloadAlert('Mandala Page')" class="flex-1 bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 transition text-sm font-medium">
+                            <i class="fa-solid fa-file-arrow-down mr-1"></i> Download
+                        </button>
+                        <a href="https://www.amazon.com/author/paradisartworks" target="_blank" class="flex-1 bg-pink-50 text-pink-600 border border-pink-200 py-2 rounded-lg hover:bg-pink-100 transition text-sm text-center flex items-center justify-center font-medium">
+                            Buy Book
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Freebie Card 2 -->
+                <div class="border rounded-2xl p-4 hover:shadow-xl transition group bg-white">
+                    <div class="overflow-hidden rounded-xl mb-4 bg-gray-100 h-64 flex items-center justify-center relative">
+                        <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded shadow">Free PDF</span>
+                        <img src="https://placehold.co/300x400/FFF/000?text=Kids+Coloring" alt="Kids Coloring" class="h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Cute Forest Animals</h3>
+                    <p class="text-sm text-gray-500 mb-4">Perfect for kids aged 4-8. Fun and easy to color.</p>
+                    <div class="flex gap-2">
+                        <button onclick="downloadAlert('Forest Animals')" class="flex-1 bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 transition text-sm font-medium">
+                            <i class="fa-solid fa-file-arrow-down mr-1"></i> Download
+                        </button>
+                        <a href="https://www.amazon.com/author/paradisartworks" target="_blank" class="flex-1 bg-pink-50 text-pink-600 border border-pink-200 py-2 rounded-lg hover:bg-pink-100 transition text-sm text-center flex items-center justify-center font-medium">
+                            Buy Book
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Freebie Card 3 -->
+                <div class="border rounded-2xl p-4 hover:shadow-xl transition group bg-white">
+                    <div class="overflow-hidden rounded-xl mb-4 bg-gray-100 h-64 flex items-center justify-center relative">
+                        <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded shadow">Free PDF</span>
+                        <img src="https://placehold.co/300x400/FFF/000?text=Planner+Page" alt="Planner Page" class="h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Weekly Planner Sheet</h3>
+                    <p class="text-sm text-gray-500 mb-4">A minimal layout to organize your busy week.</p>
+                    <div class="flex gap-2">
+                        <button onclick="downloadAlert('Planner Sheet')" class="flex-1 bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 transition text-sm font-medium">
+                            <i class="fa-solid fa-file-arrow-down mr-1"></i> Download
+                        </button>
+                        <a href="https://www.amazon.com/author/paradisartworks" target="_blank" class="flex-1 bg-pink-50 text-pink-600 border border-pink-200 py-2 rounded-lg hover:bg-pink-100 transition text-sm text-center flex items-center justify-center font-medium">
+                            Buy Planner
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section (Replaced Bestsellers) -->
+    <section id="categories" class="py-20 bg-pink-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-2">Our Categories</h2>
+                    <p class="text-gray-600">Find the perfect book for every need. From relaxation to organization.</p>
+                </div>
+                <a href="https://www.amazon.com/author/paradisartworks" class="text-pink-600 font-bold hover:underline flex items-center gap-1 group">
+                    View All Books <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Category 1: Adult Coloring -->
+                <a href="https://www.amazon.com/author/paradisartworks" target="_blank" class="group block">
+                    <div class="bg-white p-4 rounded-xl shadow-sm group-hover:shadow-lg transition h-full flex flex-col text-center">
+                        <div class="relative overflow-hidden rounded mb-4">
+                            <img src="https://placehold.co/300x450/333/FFF?text=Adult+Coloring" class="w-full book-shadow" alt="Adult Coloring">
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-2">Adult Coloring</h4>
+                        <p class="text-xs text-gray-500 mt-auto">Mandalas, Floral & Abstract</p>
+                        <span class="inline-block mt-3 text-pink-600 text-sm font-bold border border-pink-200 rounded-full px-3 py-1 bg-pink-50">Browse</span>
+                    </div>
+                </a>
+
+                <!-- Category 2: Kids Coloring -->
+                <a href="https://www.amazon.com/author/paradisartworks" target="_blank" class="group block">
+                    <div class="bg-white p-4 rounded-xl shadow-sm group-hover:shadow-lg transition h-full flex flex-col text-center">
+                        <div class="relative overflow-hidden rounded mb-4">
+                            <img src="https://placehold.co/300x450/444/FFF?text=Kids+Zone" class="w-full book-shadow" alt="Kids Coloring">
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-2">Kids Zone</h4>
+                        <p class="text-xs text-gray-500 mt-auto">Animals, ABCs & Fun</p>
+                        <span class="inline-block mt-3 text-pink-600 text-sm font-bold border border-pink-200 rounded-full px-3 py-1 bg-pink-50">Browse</span>
+                    </div>
+                </a>
+
+                <!-- Category 3: Notebooks -->
+                <a href="https://www.amazon.com/author/paradisartworks" target="_blank" class="group block">
+                    <div class="bg-white p-4 rounded-xl shadow-sm group-hover:shadow-lg transition h-full flex flex-col text-center">
+                        <div class="relative overflow-hidden rounded mb-4">
+                            <img src="https://placehold.co/300x450/555/FFF?text=Notebooks" class="w-full book-shadow" alt="Notebooks">
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-2">Notebooks</h4>
+                        <p class="text-xs text-gray-500 mt-auto">Lined, Graph & Blank</p>
+                        <span class="inline-block mt-3 text-pink-600 text-sm font-bold border border-pink-200 rounded-full px-3 py-1 bg-pink-50">Browse</span>
+                    </div>
+                </a>
+
+                 <!-- Category 4: Planners -->
+                 <a href="https://www.amazon.com/author/paradisartworks" target="_blank" class="group block">
+                    <div class="bg-white p-4 rounded-xl shadow-sm group-hover:shadow-lg transition h-full flex flex-col text-center">
+                        <div class="relative overflow-hidden rounded mb-4">
+                            <img src="https://placehold.co/300x450/666/FFF?text=Planners" class="w-full book-shadow" alt="Planners">
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-2">Planners</h4>
+                        <p class="text-xs text-gray-500 mt-auto">Daily, Weekly & Yearly</p>
+                        <span class="inline-block mt-3 text-pink-600 text-sm font-bold border border-pink-200 rounded-full px-3 py-1 bg-pink-50">Browse</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <h2 class="text-3xl font-bold mb-6">About ParadisArtworks</h2>
+            <p class="text-lg text-gray-600 leading-loose mb-8">
+                We are an independent design studio passionate about creating high-quality books that bring joy, focus, and relaxation to your life. Through our Amazon KDP brand <span class="font-bold text-pink-600">ParadisArtworks</span>, we strive to offer unique designs that blend art with practicality, helping you disconnect from screens and reconnect with your creativity.
+            </p>
+            <div class="flex justify-center gap-6 text-3xl text-gray-400">
+                <a href="#" class="hover:text-pink-600 transition transform hover:scale-110"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#" class="hover:text-pink-600 transition transform hover:scale-110"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-pink-600 transition transform hover:scale-110"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t-4 border-pink-600">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6 flex justify-center items-center gap-2 text-2xl font-bold">
+                <i class="fa-solid fa-paintbrush text-pink-500"></i> ParadisArtworks
+            </div>
+            <p class="mb-6 text-gray-400 text-sm">© 2024 ParadisArtworks. All Rights Reserved.</p>
+            <p class="text-xs text-gray-600 max-w-xl mx-auto">
+                As an Amazon Associate, we earn from qualifying purchases. This means if you click on a link and purchase an item, we may receive a small commission at no extra cost to you.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple download simulation function
+        function downloadAlert(itemName) {
+            // NOTE: Replace this with your actual Google Drive or Dropbox link logic
+            // window.location.href = 'your-file-link.pdf';
+            
+            // Temporary Alert UI
+            const msg = document.createElement('div');
+            msg.className = 'fixed bottom-5 right-5 bg-green-600 text-white px-6 py-4 rounded-lg shadow-2xl z-50 animate-bounce flex items-center gap-3';
+            msg.innerHTML = `
+                <i class="fa-solid fa-circle-check text-xl"></i>
+                <div>
+                    <h5 class="font-bold">Download Started!</h5>
+                    <p class="text-xs text-green-100">Enjoy your ${itemName}</p>
+                </div>
+            `;
+            document.body.appendChild(msg);
+            setTimeout(() => {
+                msg.classList.add('opacity-0', 'transition', 'duration-500');
+                setTimeout(() => msg.remove(), 500);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
